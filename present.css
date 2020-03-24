@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./Fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+.conteneur-flexible {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.conteneur-flexible-head {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+}
+.conteneur-flexible-foot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 70%;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.sandwich {
+  width: 30%;
+  text-align: right;
+}
+.element-flexible {
+  text-align: center;
+  box-sizing: border-box;
+  /*margin: 2px;*/
+}
+.main1 {
+  width: 100%;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  background-color: rgb(63, 88, 105);
+  color: white;
+  background-image: url("./Images/Main1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 70px;
+}
+.GetStart {
+  font-size: 18pt;
+  border: solid 2px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+.elem1 {
+  width: 100%;
+}
+.imgx {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.txtwd {
+  text-align: center;
+}
+.elem2 {
+  width: 50%;
+  height: 300px;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: white;
+}
+.elem3 {
+  width: 50%;
+  height: 300px;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: white;
+}
+.elem4 {
+  width: 50%;
+  height: 300px;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: white;
+}
+.elem5 {
+  width: 50%;
+  height: 300px;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: white;
+}
+.elem61 {
+  width: 25%;
+}
+.elem62 {
+  width: 25%;
+}
+.elem63 {
+  width: 25%;
+}
+.elem64 {
+  width: 25%;
+}
+.elemend {
+  width: 100%;
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 14pt;
+  text-align: left;
+}
+.Police1 {
+  font-family: "Montserrat-Regular", Helvetica, sans-serif;
+  font-size: 50pt;
+  font-weight: bold;
+}
+.Couleur1 {
+  background-color: rgb(63, 88, 105);
+  color: white;
+}
