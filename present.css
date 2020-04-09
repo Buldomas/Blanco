@@ -1,9 +1,20 @@
+:root {
+  --thinkness: 3px;
+  --widthcarre: 90px;
+}
+
 @font-face {
   font-family: "Montserrat-Regular";
   src: url("./Fonts/Montserrat/Montserrat-Regular.ttf");
 }
-html {box-sizing: border-box;}
-*,*:before,*:after { box-sizing: inherit;}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -124,36 +135,10 @@ body {
   object-fit: cover;
   object-position: center;
 }
-.txtwd {
-  text-align: center;
-}
-.elem2 {
+.elemMain {
+  display: block;
   width: 50%;
-  height: 300px;
-  font-family: "Montserrat-Regular", Helvetica, sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
-  color: white;
-}
-.elem3 {
-  width: 50%;
-  height: 300px;
-  font-family: "Montserrat-Regular", Helvetica, sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
-  color: white;
-}
-.elem4 {
-  width: 50%;
-  height: 300px;
-  font-family: "Montserrat-Regular", Helvetica, sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
-  color: white;
-}
-.elem5 {
-  width: 50%;
-  height: 300px;
+  height: auto;
   font-family: "Montserrat-Regular", Helvetica, sans-serif;
   font-size: 18pt;
   font-weight: bold;
@@ -181,10 +166,12 @@ body {
 .finbuzz p {
   width: 25%;
 }
-.p1 {font-size: 16pt;}
+.p1 {
+  font-size: 16pt;
+}
 .p2 {
   text-align: right;
-font-size: 14pt;
+  font-size: 14pt;
 }
 .txtGras {
   font-weight: bolder;
@@ -256,6 +243,72 @@ font-size: 14pt;
   padding: 4px;
 }
 .myform input {
-  border:0;
+  border: 0;
   width: 90%;
+}
+.carre {
+  border-style: solid;
+  border-width: var(--thinkness);
+  border-color: white;
+  height: 25px;
+  width: var(--widthcarre);
+  /*position: relative;*/
+  align-self: center;
+}
+.top {
+  border-width: var(--thinkness) var(--thinkness) 0 var(--thinkness);
+}
+
+.middle {
+  border-width: 0px 0px 0 var(--thinkness);
+  height: 45px;
+}
+
+.bottom {
+  border-width: 0px var(--thinkness) var(--thinkness) var(--thinkness);
+}
+.txtwd {
+  position: relative;
+  padding-left: calc((var(--widthcarre) / 2));
+  text-align: left;
+  left: calc((var(--widthcarre) / 2) - var(--thinkness));
+  top: calc((var(--widthcarre) - var(--thinkness)) * -1);
+}
+.txtwd2 {
+  position: relative;
+  font-size: 8pt;
+  text-align: left;
+  padding-left: calc((var(--widthcarre) / 2));
+  top: calc(((var(--widthcarre) - var(--thinkness)) * -1) - 20px);
+  left: calc((var(--widthcarre) / 2) - var(--thinkness));
+}
+.zntxtwd {
+  position: relative;
+  align-self: left;
+  left: calc((var(--widthcarre) * -1) + var(--thinkness) + 10px);
+}
+.flexbox {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: -60%;
+  left: calc(50% - (var(--widthcarre) / 2) - var(--thinkness));
+}
+/* si taille téléphone */
+@media screen and (max-width: 640px) {
+  .elemMain{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: "Montserrat-Regular", Helvetica, sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    color: white;
+  }
+  .elem61 {width: 50%;}
+  .elem62 {width: 50%;}
+  .elem63 {width: 50%;}
+  .elem64 {width: 50%;}
 }
