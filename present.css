@@ -30,6 +30,7 @@ body {
   top: 0;
   height: 40px;
   width: 100%;
+  z-index: 99;
 }
 .logo {
   display: block;
@@ -45,6 +46,7 @@ body {
   margin-right: 20px;
   text-align: right;
   justify-content: right;
+  z-index: 100;
 }
 #menu1 {
   display: block;
@@ -95,7 +97,8 @@ body {
   /*margin: 2px;*/
 }
 .main1 {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   font-family: "Montserrat-Regular", Helvetica, sans-serif;
@@ -103,9 +106,15 @@ body {
   font-weight: bold;
   background-color: rgb(63, 88, 105);
   color: white;
+
+  object-position: center;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
 }
 .imgMain {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -114,10 +123,21 @@ body {
   text-align: center;
 }
 .textMain {
+  font-size: 0;
   display: block;
-  width: 100%;
-  position: absolute;
-  top: 6em;
+  margin: auto;
+  width: 50%;
+  height: 0;
+  position: relative;
+  top: -50%;
+  left: 0;
+  align-self: center;
+  text-align: center;
+}
+.GetStart0 {
+  font-size: 18pt;
+  padding: 10px;
+  margin: 0;
 }
 .GetStart {
   font-size: 18pt;
@@ -143,6 +163,7 @@ body {
   font-size: 18pt;
   font-weight: bold;
   color: white;
+  z-index: 10;
 }
 .buzz {
   background-color: lightgray;
@@ -175,24 +196,27 @@ body {
 }
 .txtGras {
   font-weight: bolder;
-  font-size: 10pt;
+  font-size: 12pt;
   margin-top: 2px;
   margin-bottom: 2px;
 }
 .txtGris {
-  font-size: 8pt;
+  font-size: 10pt;
   margin-top: 2px;
   margin-bottom: 5px;
 }
+h3 {
+  font-size: 16pt;
+}
 .txtGris2 {
   color: gray;
-  font-size: 8pt;
+  font-size: 10pt;
   margin-top: 2px;
   margin-bottom: 3px;
 }
 .txtPetit {
-  font-size: 8pt;
-  margin-top: 2px;
+  font-size: 10pt;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 .elem61 {
@@ -239,12 +263,18 @@ body {
 }
 .myform {
   display: block;
+  width: 95%;
   border: 1px solid lightgray;
   padding: 4px;
 }
 .myform input {
   border: 0;
-  width: 90%;
+  width: 85%;
+}
+.myform button {
+  border:2px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .carre {
   border-style: solid;
@@ -289,6 +319,7 @@ body {
 }
 .flexbox {
   display: block;
+
   justify-content: center;
   text-align: center;
   align-items: center;
