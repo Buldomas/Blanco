@@ -3,18 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercice Flex 3</title>
+    <title>Blanco</title>
     <link rel="stylesheet" href="present.css" />
+    <script src="https://kit.fontawesome.com/2bbe852980.js" crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body id="myBody">
     <header class="conteneur-flexible-head">
-      <div class="logo">BLAN.CO</div>
-      <div class="sandwich">Menu sandwich</div>
+      <div class="logo"><p>BLAN.CO</p></div>
+      <div id="sandwich" class="sandwich">
+        <p id="btnicone"><i id="btn" class="fas fa-align-justify"></i></p>
+        <div id="menu1" class="sdw">
+          <li><a href="https://codepen.io/buldomas/pen/PoqMwEG" target="_blank">Portfolio</a></li>
+          <li><a href="#">London Mod</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Camp</a></li>
+          <li><a href="#">Laveda Bridal</a></li>
+        </div>
+      </div>
     </header>
     <main class="conteneur-flexible">
-      <div class="element-flexible main1">
-        <p>portfolio & blog to tell your storie.</p>
-        <p class="GetStart">Get Started</p>
+      <div class="main1">
+        <div class="imgMain">
+          <img src="./Images/Main1.jpg" alt="" />
+        </div>
+        <div class="textMain">
+          <p>portfolio & blog to tell your storie.</p>
+          <p class="GetStart">Get Started</p>
+        </div>
       </div>
       <div class="element-flexible elem2">
         <img class="imgx" src="./Images/img1.jpg" alt="" />
@@ -32,15 +48,64 @@
         <img class="imgx" src="./Images/img4.jpg" alt="" />
         <p class="txtwd">Laveda Bridal</p>
       </div>
-
-      <div class="element-flexible elem1">Testimonials</div>
+      <div class="element-flexible elem1 buzz">
+        <h2>Buzz</h2>
+        <div class="txtbuzz">
+        <p>For those of you who know me know that I’ve been working with Ross for a long time.  We “met” virtually through a forum many years ago, and he caught my eye as someone who was shaking things up.  When it comes to websites, branding, and marketing plans it’s nice to find someone you can [...]</p>
+        <div class="finbuzz">
+          <p></p>
+          <p class="p1"><span style="font-weight: bolder;">.</span>..</p>
+          <p class="p2">- Jason Group</p>
+      </div>
+      </div>
     </main>
     <footer class="conteneur-flexible-foot">
-      <div class="element-flexible elem61">Featured Posts</div>
-      <div class="element-flexible elem62">Instagram Feed</div>
-      <div class="element-flexible elem63">Lastest Tweets</div>
-      <div class="element-flexible elem64">Subsribe</div>
-      <div class="element-flexible elemend">@2013 MODERN THEME COPYRIGHT</div>
+      <div class="element-flexible elem61">
+        <h3>Featured Posts</h3>
+        <p class="txtGras">Maui, Hawaii Workshop May 2011</p>
+        <p class="txtGris">Posted on 12 January 2012</p><br>
+        <p class="txtGras">London Photography Workshops April 2011</p>
+        <p class="txtGris">Posted on 12 January 2012</p><br>
+        <p class="txtGras">Book Cover Features</p>
+        <p class="txtGris">Posted on 12 January 2012</p>
+      </div>
+      <div class="element-flexible elem62">
+        <h3>Instagram Feed</h3>
+        <div class="box6">
+            <img src="./Images/Instagr1.png" alt="">
+            <img src="./Images/Instagr2.png" alt="">
+            <img src="./Images/Instagr3.png" alt="">
+            <img src="./Images/Instagr4.png" alt="">
+            <img src="./Images/Instagr5.png" alt="">
+            <img src="./Images/Instagr6.png" alt="">
+            <!--
+              <img src="https://picsum.photos/1541/1152?random=5" alt="" />
+            -->
+        </div>
+      </div>
+      <div class="element-flexible elem63">
+        <h3>Lastest Tweets</h3>
+        <p class="txtGris2">@flothemes     2 Dec</p>
+        <p class="txtPetit">Go do your best :) “@caitlinaphoto: That moment when your blog design company wishes you good luck on finals…! </p>
+        <br>
+        <p class="txtGris2">@flothemes     2 Dec</p>
+        <p class="txtPetit">Go do your best :) “@caitlinaphoto: That moment when your blog design company wishes you good luck on finals…! </p>
+      </div>
+      <div class="element-flexible elem64">
+        <h3>Subsribe</h3>
+        <p class="txtPetit">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit <span style="font-weight: bolder">consequat ipsum</span>, nec sagittis sem nibh id elit.</p>
+        <br>
+        <form class="myform" action="">
+          <input type="Email" placeholder="email here.">
+          <span><i class="fas fa-arrow-right"></i></span>
+        </form>
+      </div>
+      <div class="element-flexible elemend">
+        <div><p>@2013 MODERN THEME COPYRIGHT</p></div>
+        <div><p>THEME BY <span class="txtGras">FLOTHEMES</span></p></div>
+        </div>
     </footer>
+
+    <script type="text/javascript" src="./present.js"></script>
   </body>
 </html>

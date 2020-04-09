@@ -2,50 +2,111 @@
   font-family: "Montserrat-Regular";
   src: url("./Fonts/Montserrat/Montserrat-Regular.ttf");
 }
-
-.conteneur-flexible {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+html {box-sizing: border-box;}
+*,*:before,*:after { box-sizing: inherit;}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+/* Gestion du Header */
 .conteneur-flexible-head {
   display: flex;
   flex-direction: row;
   position: sticky;
+  justify-content: space-between;
   top: 0;
-}
-.conteneur-flexible-foot {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  height: 40px;
+  width: 100%;
 }
 .logo {
+  display: block;
   width: 70%;
   font-family: "Montserrat-Regular", Helvetica, sans-serif;
   font-size: 10pt;
   font-weight: bold;
+  padding-left: 20px;
 }
 .sandwich {
+  display: block;
   width: 30%;
+  margin-right: 20px;
   text-align: right;
+  justify-content: right;
 }
+#menu1 {
+  display: block;
+  list-style: none;
+  font-size: 16pt;
+  padding-left: 0;
+  text-align: right;
+  margin-right: 0;
+  position: relative;
+  top: -40px;
+  width: 100%;
+  left: 100%;
+  transition: left 330ms ease-in-out;
+}
+#menu1 a:any-link {
+  text-decoration: none;
+  color: black;
+}
+#menu1 a:hover {
+  color: cadetblue;
+}
+#btnicone {
+  display: block;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  left: 0px;
+  transition: left 330ms ease-in-out;
+}
+#btn:hover {
+  cursor: pointer;
+  transform: scale(2);
+  transition: transform 330ms ease-in-out;
+}
+/* Fin du Header */
+
+/* Main */
+.conteneur-flexible {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .element-flexible {
   text-align: center;
   box-sizing: border-box;
   /*margin: 2px;*/
 }
 .main1 {
+  display: block;
   width: 100%;
+  height: auto;
   font-family: "Montserrat-Regular", Helvetica, sans-serif;
   font-size: 18pt;
   font-weight: bold;
   background-color: rgb(63, 88, 105);
   color: white;
-  background-image: url("./Images/Main1.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 70px;
+  text-align: center;
+}
+.imgMain {
+  width: 100%;
+  height: auto;
+}
+.imgMain img {
+  width: 100%;
+  text-align: center;
+}
+.textMain {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 6em;
 }
 .GetStart {
   font-size: 18pt;
@@ -98,23 +159,82 @@
   font-weight: bold;
   color: white;
 }
+.buzz {
+  background-color: lightgray;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.txtbuzz {
+  width: 60%;
+  margin: auto;
+}
+.finbuzz {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.finbuzz p {
+  width: 25%;
+}
+.p1 {font-size: 16pt;}
+.p2 {
+  text-align: right;
+font-size: 14pt;
+}
+.txtGras {
+  font-weight: bolder;
+  font-size: 10pt;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.txtGris {
+  font-size: 8pt;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.txtGris2 {
+  color: gray;
+  font-size: 8pt;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.txtPetit {
+  font-size: 8pt;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
 .elem61 {
   width: 25%;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .elem62 {
   width: 25%;
 }
 .elem63 {
   width: 25%;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .elem64 {
   width: 25%;
+  text-align: left;
 }
 .elemend {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
   width: 100%;
   font-family: "Montserrat-Regular", Helvetica, sans-serif;
-  font-size: 14pt;
-  text-align: left;
+  font-size: 10pt;
+  /*text-align: left;*/
 }
 .Police1 {
   font-family: "Montserrat-Regular", Helvetica, sans-serif;
@@ -124,4 +244,18 @@
 .Couleur1 {
   background-color: rgb(63, 88, 105);
   color: white;
+}
+.conteneur-flexible-foot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.myform {
+  display: block;
+  border: 1px solid lightgray;
+  padding: 4px;
+}
+.myform input {
+  border:0;
+  width: 90%;
 }
